@@ -9,10 +9,10 @@ namespace ProjetoModeloDDD.Domain.Entities
         public string NomeCliente { get; set; }
 
         public int ServicoId { get; set; }
-        public virtual Services Service { get; set; }
+        public virtual Servicos Service { get; set; }
 
         public int ClienteId { get; set; }
-        public virtual Services Cliente { get; set; }
+        public virtual Servicos Cliente { get; set; }
 
         public int ColaboradorId { get; set; }
         public virtual Colaboradores Colaborador { get; set; }

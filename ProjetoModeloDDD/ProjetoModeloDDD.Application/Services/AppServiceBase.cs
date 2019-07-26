@@ -7,9 +7,9 @@ namespace ProjetoModeloDDD.Application
 {
     public class AppServiceBase<TEntity> : IDisposable, IAppServiceBase<TEntity> where TEntity : class
     {
-        private readonly IServicesBase<TEntity> _serviceBase;
+        private readonly IServiceBase<TEntity> _serviceBase;
 
-        public AppServiceBase(IServicesBase<TEntity> serviceBase)
+        public AppServiceBase(IServiceBase<TEntity> serviceBase)
         {
             _serviceBase = serviceBase;
         }

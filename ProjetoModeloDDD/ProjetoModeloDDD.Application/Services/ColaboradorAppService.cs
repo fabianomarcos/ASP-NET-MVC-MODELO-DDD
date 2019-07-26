@@ -8,13 +8,14 @@ namespace ProjetoModeloDDD.Application.Services
 {
     public class ColaboradorAppService : AppServiceBase<Colaboradores>, IColaboradorAppService
     {
-        private readonly IColaboradoresServices _colaboradorService;
+        private readonly IColaboradorService _colaboradorService;
 
-        public ColaboradorAppService(IColaboradoresServices colaboradorService) : 
+        public ColaboradorAppService(IColaboradorService colaboradorService) : 
             base(colaboradorService)
         {
             _colaboradorService = colaboradorService;
         }
+
         public IEnumerable<Colaboradores> BuscarPorNome(string nome)
         {
             return _colaboradorService.BuscarPorNome(nome);

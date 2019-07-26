@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using ProjetoModeloDDD.Domain.Entities;
-
 namespace ProjetoModeloDDD.Domain.Interfaces.Servicos
 {
-    public interface IInsumoService : IServiceBase<Insumos>
+    public interface IServicoService : IServiceBase<Entities.Servicos>
     {
-        IEnumerable<Insumos> BuscarPorNome(string nome);
+        IEnumerable<Entities.Servicos> BuscarPorNome(string nome);
     }
 }

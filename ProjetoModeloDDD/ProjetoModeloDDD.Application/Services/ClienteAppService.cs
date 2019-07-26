@@ -5,19 +5,19 @@ using System.Collections.Generic;
 
 namespace ProjetoModeloDDD.Application
 {
-    public class ClienteAppService : AppServiceBase<Services> ,IClienteAppService
+    public class ClienteAppService : AppServiceBase<Cliente> ,IClienteAppService
     {
-        private readonly IClienteServices _clienteService;
+        private readonly IClienteService _clienteService;
 
-        public ClienteAppService(IClienteServices clienteService) 
+        public ClienteAppService(IClienteService clienteService) 
             : base(clienteService)
         {
             _clienteService = clienteService;
         }
 
-        public IEnumerable<Services> ObterClientesEspeciais()
+        public IEnumerable<Cliente> ObterClientesEspeciais()
         {
-            return _clienteService.ObterClientesEspeciais(_clienteService.GetAll());
+            return null;// _clienteService.ObterClientesEspeciais(_clienteService.GetAll());
         }
     }
 }

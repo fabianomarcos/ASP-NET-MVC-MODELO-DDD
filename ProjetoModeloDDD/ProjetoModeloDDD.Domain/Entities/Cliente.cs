@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ProjetoModeloDDD.Domain.Entities
 {
-    public class Services
+    public class Cliente
     {
         public int ClienteId { get; set; }
 
@@ -17,7 +17,7 @@ namespace ProjetoModeloDDD.Domain.Entities
 
         public bool Ativo { get; set; }
 
-        public bool ClienteEspecial(Services cliente)
+        public bool ClienteEspecial(Cliente cliente)
         {
             return cliente.Ativo && DateTime.Now.Year - cliente.DataCadastro.Year >= 5;
         }

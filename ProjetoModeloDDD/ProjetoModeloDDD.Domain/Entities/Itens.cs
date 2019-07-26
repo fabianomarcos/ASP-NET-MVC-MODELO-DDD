@@ -9,6 +9,7 @@
         public int Quantidade { get; set; }
 
         public decimal ValorUnitario { get; set; }
+        public virtual Itens itens { get; set; }
 
         public int ProdutoId { get; set; }
         public virtual Produtos Produto { get; set; }

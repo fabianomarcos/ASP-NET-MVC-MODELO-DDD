@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace ProjetoModeloDDD.Domain.Services
 {
-    public class HorarioService : ServiceBase<Horarios>, IHorariosServices
+    public class HorarioService : ServiceBase<Horarios>, IHorarioService
     {
         private readonly IHorarioRepositorio _horarioRepository;
 
@@ -13,10 +13,6 @@ namespace ProjetoModeloDDD.Domain.Services
             :base(horarioRepositorio)
         {
             _horarioRepository = horarioRepositorio;
-        }
-        public IEnumerable<Horarios> BuscarPorNome(string profissional)
-        {
-            return _horarioRepository.BuscarPorNome(profissional);
         }
     }
 }

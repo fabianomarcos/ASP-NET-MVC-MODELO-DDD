@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 namespace ProjetoModeloDDD.Application.Interface
 {
-    public interface IClienteAppService :IAppServiceBase<Services>
+    public interface IClienteAppService :IAppServiceBase<Cliente>
     {
-        IEnumerable<Services> ObterClientesEspeciais();    
+        IEnumerable<Cliente> ObterClientesEspeciais();    
     }
 }

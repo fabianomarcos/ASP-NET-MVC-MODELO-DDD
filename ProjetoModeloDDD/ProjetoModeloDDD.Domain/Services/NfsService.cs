@@ -5,19 +5,14 @@ using System.Collections.Generic;
 
 namespace ProjetoModeloDDD.Domain.Services
 {
-    public class NfsService : ServiceBase<NFs>, INfsServices
+    public class NfsService : ServiceBase<NFs>, INfService
     {
-        private readonly INfsRepositorio _nfRepository;
+        private readonly INFRepositorio _nfRepository;
 
-        public NfsService(INfsRepositorio nfRepositorio)
+        public NfsService(INFRepositorio nfRepositorio)
             :base(nfRepositorio)
         {
             _nfRepository = nfRepositorio;
-        }
-
-        public IEnumerable<NFs> BuscarPorNome(int nome)
-        {
-            return _nfRepository.BuscarPorNome(nome);
         }
     }
 }

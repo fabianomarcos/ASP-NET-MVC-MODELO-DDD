@@ -7,16 +7,12 @@ namespace ProjetoModeloDDD.Application.Services
 {
     public class FornecedorAppService : AppServiceBase<Fornecedores>, IFornecedorAppService
     {
-        private readonly IFornecedoresServices _fornecedorService;
+        private readonly IFornecedorService _fornecedorService;
 
-        public FornecedorAppService(IFornecedoresServices fornecedorService) : 
+        public FornecedorAppService(IFornecedorService fornecedorService) : 
             base(fornecedorService)
         {
             _fornecedorService = fornecedorService;
-        }
-        public IEnumerable<Fornecedores> BuscarPorNome(string nome)
-        {
-            return _fornecedorService.BuscarPorNome(nome);
         }
     }
 }

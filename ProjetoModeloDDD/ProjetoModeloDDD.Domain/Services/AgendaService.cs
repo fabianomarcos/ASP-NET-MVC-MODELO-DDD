@@ -5,7 +5,7 @@ using ProjetoModeloDDD.Domain.Interfaces.Repositorios;
 
 namespace ProjetoModeloDDD.Domain.Services
 {
-    public class AgendaService : ServiceBase<Agenda>, IAgendaServices
+    public class AgendaService : ServiceBase<Agenda>, IAgendaService
     {
         private readonly IAgendaRepositorio _agendaRepository;
 
@@ -13,11 +13,6 @@ namespace ProjetoModeloDDD.Domain.Services
             :base(agendaRepositorio)
         {
             _agendaRepository = agendaRepositorio;
-        }
-
-        public IEnumerable<Agenda> BuscarPorNome(string profissional)
-        {
-            return _agendaRepository.BuscarPorNome(profissional);
         }
     }
 }

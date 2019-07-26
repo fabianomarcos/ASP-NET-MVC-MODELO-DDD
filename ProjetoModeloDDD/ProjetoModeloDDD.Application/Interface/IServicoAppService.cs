@@ -2,8 +2,8 @@
 
 namespace ProjetoModeloDDD.Application.Interface
 {
-    public interface IServicoAppService : IAppServiceBase<Domain.Entities.Services>
+    public interface IServicoAppService : IAppServiceBase<Servicos>
     {
-        IEnumerable<Domain.Entities.Services> BuscarPorNome(string nome);
+        IEnumerable<Servicos> BuscarPorNome(string nome);
     }
 }

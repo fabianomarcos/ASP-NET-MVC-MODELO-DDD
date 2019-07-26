@@ -3,7 +3,8 @@ using System.Collections.Generic;
 
 namespace ProjetoModeloDDD.Domain.Interfaces.Repositorios
 {
-    public interface IServicesRepositorio : IRepositorioBase<Services>
+    public interface IServicoRepositorio : IRepositorioBase<Entities.Servicos>
     {
+        IEnumerable<Entities.Servicos> BuscarPorNome(string nome);
     }
 }

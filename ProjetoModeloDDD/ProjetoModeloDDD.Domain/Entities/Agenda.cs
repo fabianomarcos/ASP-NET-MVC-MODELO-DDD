@@ -14,10 +14,9 @@ namespace ProjetoModeloDDD.Domain.Entities
         public string Horario { get; set; }
 
         public int ServicosId { get; set; }
-        public virtual Services Servico { get; set; }
+        public virtual Servicos Servico { get; set; }
 
         public int ClienteId { get; set; }
-        public virtual Services Cliente { get; set; }
 
         public int ColaboradorId { get; set; }
         public virtual Colaboradores Colaborador { get; set; }

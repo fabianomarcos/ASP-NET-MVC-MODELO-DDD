@@ -1,19 +1,21 @@
 ﻿using ProjetoModeloDDD.Application.Interface;
+using ProjetoModeloDDD.Domain.Entities;
 using ProjetoModeloDDD.Domain.Interfaces.Servicos;
 using System.Collections.Generic;
 
 namespace ProjetoModeloDDD.Application.Services
 {
-    public class ServicoAppService : AppServiceBase<Domain.Entities.Services>, IServicoAppService
+    public class ServicoAppService : AppServiceBase<Domain.Entities.Servicos>, IServicoAppService
     {
-        private readonly IServicesServices _servicoService;
+        private readonly IServicoService _servicoService;
 
-        public ServicoAppService(IServicesServices servicoService) : 
+        public ServicoAppService(IServicoService servicoService) : 
             base(servicoService)
         {
             _servicoService = servicoService;
         }
-        public IEnumerable<Domain.Entities.Services> BuscarPorNome(string nome)
+
+        public IEnumerable<Servicos> BuscarPorNome(string nome)
         {
             return _servicoService.BuscarPorNome(nome);
         }

@@ -8,16 +8,12 @@ namespace ProjetoModeloDDD.Application.Services
 {
     public class HorarioAppService : AppServiceBase<Horarios>, IHorarioAppService
     {
-        private readonly IHorariosServices _horarioService;
+        private readonly IHorarioService _horarioService;
 
         public HorarioAppService(HorarioService horarioService) :
             base(horarioService)
         {
             _horarioService = horarioService;
-        }
-        public IEnumerable<Horarios> BuscarPorNome(string profissional)
-        {
-            return _horarioService.BuscarPorNome(profissional);
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace ProjetoModeloDDD.Infra.Data.Repositories
 {
-    public class ItemRepositorio : RepositorioBase<Itens>, IItemRepositorio
+    public class ItemRepositorio : RepositorioBase<Itens>, IItensRepositorio
     {
         public IEnumerable<Itens> BuscarPorId(int Id)
         {

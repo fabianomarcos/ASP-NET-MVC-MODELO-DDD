@@ -1,5 +1,6 @@
 ﻿using ProjetoModeloDDD.Domain.Entities;
 using ProjetoModeloDDD.Domain.Interfaces;
+using ProjetoModeloDDD.Domain.Interfaces.Repositorios;
 using ProjetoModeloDDD.Domain.Interfaces.Servicos;
 using System;
 using System.Collections.Generic;

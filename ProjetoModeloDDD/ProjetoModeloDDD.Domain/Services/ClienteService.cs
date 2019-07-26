@@ -7,7 +7,7 @@ using ProjetoModeloDDD.Domain.Interfaces.Repositorios;
 
 namespace ProjetoModeloDDD.Domain.Services
 {
-    public class ClienteService : ServiceBase<Services>, IClienteServices
+    public class ClienteService : ServiceBase<Cliente>, IClienteService
     {
         private readonly IClienteRepositorio _clienteRepository;
 
@@ -17,9 +17,14 @@ namespace ProjetoModeloDDD.Domain.Services
             _clienteRepository = clienteRepositorio;
         }
 
-        public IEnumerable<Services> ObterClientesEspeciais(IEnumerable<Services> clientes)
+        public IEnumerable<Cliente> ObterClientesEspeciais(IEnumerable<Cliente> clientes)
         {
             return clientes.Where(c => c.ClienteEspecial(c));
         }
-     }
+
+        public IEnumerable<Cliente> ObterClientesEspeciais(Cliente cliente)
+        {
+            throw new System.NotImplementedException();
+        }
+    }
 }

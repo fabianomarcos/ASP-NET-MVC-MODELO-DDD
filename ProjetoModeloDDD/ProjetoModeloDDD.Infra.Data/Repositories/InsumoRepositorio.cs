@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace ProjetoModeloDDD.Infra.Data.Repositories
 {
-    public class InsumoRepositorio : RepositorioBase<Insumos>, IInsumosRepositorio
+    public class InsumoRepositorio : RepositorioBase<Insumos>, IInsumoRepositorio
     {
         public IEnumerable<Insumos> BuscarPorNome(string nome)
         {

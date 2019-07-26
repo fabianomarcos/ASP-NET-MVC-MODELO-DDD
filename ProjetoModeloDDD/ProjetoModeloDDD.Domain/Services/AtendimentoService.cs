@@ -14,10 +14,5 @@ namespace ProjetoModeloDDD.Domain.Services
         {
             _atendimentoRepository = atendimentoRepositorio;
         }
-
-        public IEnumerable<Atendimento> BuscarPorNome(string nome)
-        {
-            return _atendimentoRepository.BuscarPorNome(nome);
-        }
     }
 }

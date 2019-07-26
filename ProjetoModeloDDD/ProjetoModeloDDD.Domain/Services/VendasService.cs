@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace ProjetoModeloDDD.Domain.Services
 {
-    public class VendasService : ServiceBase<Vendas>, IVendasServices
+    public class VendasService : ServiceBase<Vendas>, IVendasService
     {
         private readonly IVendasRepositorio _vendasRepository;
 
@@ -13,11 +13,6 @@ namespace ProjetoModeloDDD.Domain.Services
             :base(vendasRepositorio)
         {
             _vendasRepository = vendasRepositorio;
-        }
-
-        public IEnumerable<Vendas> BuscarPorNome(int nome)
-        {
-            return _vendasRepository.BuscarPorNome(nome);
         }
     }
 }

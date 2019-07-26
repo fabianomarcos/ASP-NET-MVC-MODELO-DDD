@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoModeloDDD.Infra.Data.Repositories
 {
-    public class NfRepositorio : RepositorioBase<NFs>, INfsRepositorio
+    public class NfRepositorio : RepositorioBase<NFs>, INFRepositorio
     {
         public IEnumerable<NFs> BuscarPorNome(int nome)
         {

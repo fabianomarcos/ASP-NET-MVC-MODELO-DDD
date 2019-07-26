@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace ProjetoModeloDDD.Domain.Services
 {
-    public class ColaboradorService : ServiceBase<Colaboradores>, IColaboradoresServices
+    public class ColaboradorService : ServiceBase<Colaboradores>, IColaboradorService
     {
         private readonly IColaboradorRepositorio _colaboradorRepository;
 

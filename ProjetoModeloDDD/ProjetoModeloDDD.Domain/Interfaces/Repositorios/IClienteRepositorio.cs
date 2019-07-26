@@ -9,6 +9,6 @@ namespace ProjetoModeloDDD.Domain.Interfaces.Repositorios
 {
     public interface IClienteRepositorio : IRepositorioBase<Cliente>
     {
-
+        
     }
 }

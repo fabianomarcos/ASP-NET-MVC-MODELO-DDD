@@ -7,9 +7,9 @@ namespace ProjetoModeloDDD.Application.Services
 {
     public class InsumoAppService : AppServiceBase<Insumos>, IInsumoAppService
     {
-        private readonly IInsumosServices _insumoService;
+        private readonly IInsumoService _insumoService;
 
-        public InsumoAppService(IInsumosServices insumoService) : 
+        public InsumoAppService(IInsumoService insumoService) : 
             base(insumoService)
         {
             _insumoService = insumoService;

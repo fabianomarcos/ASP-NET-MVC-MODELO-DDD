@@ -8,16 +8,12 @@ namespace ProjetoModeloDDD.Application.Services
 {
     public class AgendaAppService : AppServiceBase<Agenda>, IAgendaAppService
     {
-        private readonly IAgendaServices _agendaService;
-
+        private readonly IAgendaService _agendaService;
+        
         public AgendaAppService(AgendaService agendaService) : 
             base(agendaService)
         {
             _agendaService = agendaService;
-        }
-        public IEnumerable<Agenda> BuscarPorNome(string nome)
-        {
-            return _agendaService.BuscarPorNome(nome);
         }
     }
 }

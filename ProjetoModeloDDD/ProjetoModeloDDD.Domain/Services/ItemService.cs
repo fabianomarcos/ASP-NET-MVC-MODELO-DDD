@@ -7,17 +7,17 @@ namespace ProjetoModeloDDD.Domain.Services
 {
     public class ItemService : ServiceBase<Itens>, IItemService
     {
-        private readonly IItemRepositorio _itemRepository;
+        private readonly IItensRepositorio _itemRepository;
 
-        public ItemService(IItemRepositorio itemRepositorio)
+        public ItemService(IItensRepositorio itemRepositorio)
             :base(itemRepositorio)
         {
             _itemRepository = itemRepositorio;
         }
 
-        public IEnumerable<Itens> BuscarPorId(int Id)
+        public IEnumerable<Itens> BuscarPorId(int ItemId)
         {
-            return _itemRepository.BuscarPorId(Id);
+            return _itemRepository.BuscarPorId(ItemId);
         }
     }
 }

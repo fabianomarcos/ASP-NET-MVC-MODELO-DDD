@@ -7,16 +7,12 @@ namespace ProjetoModeloDDD.Application.Services
 {
     public class NfAppService : AppServiceBase<NFs>, INfAppService
     {
-        private readonly INfsServices _nfService;
+        private readonly INfService _nfService;
 
-        public NfAppService(INfsServices nfService) : 
+        public NfAppService(INfService nfService) : 
             base(nfService)
         {
             _nfService = nfService;
-        }
-        public IEnumerable<NFs> BuscarPorNome(int nome)
-        {
-            return _nfService.BuscarPorNome(nome);
         }
     }
 }

@@ -9,6 +9,6 @@ namespace ProjetoModeloDDD.Domain.Interfaces.Servicos
 {
     public interface IClienteService : IServiceBase<Cliente>
     {
-
+        IEnumerable<Cliente> ObterClientesEspeciais(Cliente cliente);
     }
 }

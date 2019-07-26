@@ -5,13 +5,11 @@ using System.Linq;
 
 namespace ProjetoModeloDDD.Infra.Data.Repositories
 {
-    public class ClienteRepositorio : RepositorioBase<Services>, IClienteRepositorio
+    public class ClienteRepositorio : RepositorioBase<Cliente>, IClienteRepositorio
     {
-        public IEnumerable<Services> BuscarPorNome(string nome)
+        public IEnumerable<Cliente> BuscarPorNome(string nome)
         {
             return Db.Clientes.Where(p => p.Nome == nome);
         }
-
-               
     }
 }

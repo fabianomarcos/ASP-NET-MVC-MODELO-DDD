@@ -2,7 +2,7 @@
 
 namespace ProjetoModeloDDD.Domain.Entities
 {
-    public class Services
+    public class Servicos
     {
         public int ServicosId { get; set; }
 

@@ -5,6 +5,5 @@ namespace ProjetoModeloDDD.Application.Interface
 {
     public interface IVendasAppService : IAppServiceBase<Vendas>
     {
-        IEnumerable<Vendas> BuscarPorNome(int nome);
     }
 }

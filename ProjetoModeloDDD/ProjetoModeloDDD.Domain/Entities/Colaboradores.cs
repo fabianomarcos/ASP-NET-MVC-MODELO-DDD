@@ -19,5 +19,6 @@ namespace ProjetoModeloDDD.Domain.Entities
         public int Comissao { get; set; }
 
         public IEnumerable<Agenda> Agenda { get; set; }
+        public IEnumerable<Colaboradores> colaboradores { get;}
     }
 }
