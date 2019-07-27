@@ -5,11 +5,11 @@ using System.Collections.Generic;
 
 namespace ProjetoModeloDDD.Domain.Services
 {
-    public class ServicesService : ServiceBase<Servicos>, IServicoService
+    public class ServicoService : ServiceBase<Servicos>, IServicoService
     {
         private readonly IServicoRepositorio _serviceRepository;
 
-        public ServicesService(IServicoRepositorio serviceRepositorio)
+        public ServicoService(IServicoRepositorio serviceRepositorio)
             :base(serviceRepositorio)
         {
             _serviceRepository = serviceRepositorio;

@@ -69,6 +69,7 @@
     <Compile Include="Interfaces\Servicos\IVendasService.cs" />
     <Compile Include="Interfaces\Servicos\IItemService.cs" />
     <Compile Include="Interfaces\Servicos\IClienteService.cs" />
+    <Compile Include="Interfaces\Servicos\IServicoService.cs" />
     <Compile Include="Interfaces\Servicos\IProdutoService.cs" />
     <Compile Include="Interfaces\Servicos\IServiceBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,7 +84,7 @@
     <Compile Include="Services\NfsService.cs" />
     <Compile Include="Services\ProdutoService.cs" />
     <Compile Include="Services\ServiceBase.cs" />
-    <Compile Include="Services\ServicesService.cs" />
+    <Compile Include="Services\ServicoService.cs" />
     <Compile Include="Services\VendasService.cs" />
   </ItemGroup>
   <ItemGroup />

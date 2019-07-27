@@ -93,7 +93,7 @@ namespace ProjetoModeloDDD.MVC.App_Start
             kernel.Bind<IInsumosServices>().To<InsumosService>();
             kernel.Bind<IItemService>().To<ItemService>();
             kernel.Bind<INfsServices>().To<NfsService>();
-            kernel.Bind<IServicesServices>().To<ServicesService>();
+            kernel.Bind<IServicoServices>().To<ServicoService>();
             kernel.Bind<IVendasServices>().To<VendasService>();
 
             kernel.Bind(typeof(IRepositorioBase<>)).To(typeof(RepositorioBase<>));
