@@ -22,7 +22,6 @@ namespace ProjetoModeloDDD.MVC.AutoMapper
             CreateMap<InsumoViewModel, Insumos>();
             CreateMap<ItensViewModel, Itens>();
             CreateMap<NfViewModel, NFs>();
-            CreateMap<ServiceViewModel, Services>();
             CreateMap<VendaViewModel, Vendas>();
         }
     }

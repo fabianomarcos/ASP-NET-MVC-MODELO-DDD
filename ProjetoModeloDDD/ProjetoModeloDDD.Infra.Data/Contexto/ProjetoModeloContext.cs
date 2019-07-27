@@ -1,6 +1,8 @@
 ﻿using ProjetoModeloDDD.Domain.Entities;
 using ProjetoModeloDDD.Infra.Data.EntityConfig;
 using System;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 
 namespace ProjetoModeloDDD.Infra.Data.Contexto
@@ -16,7 +18,7 @@ namespace ProjetoModeloDDD.Infra.Data.Contexto
 
         public DbSet<Atendimento> Atendimentos { get; set; }
 
-        public DbSet<Services> Clientes { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
 
         public DbSet<Colaboradores> Colaboradores { get; set; }
 
@@ -32,9 +34,8 @@ namespace ProjetoModeloDDD.Infra.Data.Contexto
 
         public DbSet<Produtos> Produtos { get; set; }
 
-        public DbSet<Services> Servicos { get; set; }
-
         public DbSet<Vendas> Vendas { get; set; }    
+        public DbSet<Servicos> Servicos { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

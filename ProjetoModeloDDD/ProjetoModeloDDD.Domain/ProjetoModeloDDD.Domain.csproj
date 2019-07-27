@@ -43,8 +43,8 @@
     <Compile Include="Entities\Insumos.cs" />
     <Compile Include="Entities\Itens.cs" />
     <Compile Include="Entities\NFs.cs" />
-    <Compile Include="Entities\Services.cs" />
     <Compile Include="Entities\Produtos.cs" />
+    <Compile Include="Entities\Servicos.cs" />
     <Compile Include="Entities\Vendas.cs" />
     <Compile Include="Interfaces\Repositorios\IAgendaRepositorio.cs" />
     <Compile Include="Interfaces\Repositorios\IAtendimentoRepositorio.cs" />
@@ -54,10 +54,10 @@
     <Compile Include="Interfaces\Repositorios\IItensRepositorio.cs" />
     <Compile Include="Interfaces\Repositorios\IHorarioRepositorio.cs" />
     <Compile Include="Interfaces\Repositorios\INFRepositorio.cs" />
-    <Compile Include="Interfaces\Repositorios\IServicesRepositorio.cs" />
     <Compile Include="Interfaces\Repositorios\IVendasRepositorio.cs" />
     <Compile Include="Interfaces\Repositorios\IProdutoRepositorio.cs" />
     <Compile Include="Interfaces\Repositorios\IClienteRepositorio.cs" />
+    <Compile Include="Interfaces\Repositorios\IServicoRepositorio.cs" />
     <Compile Include="Interfaces\Repositorios\IRepositorioBase.cs" />
     <Compile Include="Interfaces\Servicos\IAgendaService.cs" />
     <Compile Include="Interfaces\Servicos\IAtendimentoService.cs" />
@@ -66,7 +66,6 @@
     <Compile Include="Interfaces\Servicos\IHorarioService.cs" />
     <Compile Include="Interfaces\Servicos\INfService.cs" />
     <Compile Include="Interfaces\Servicos\IInsumoService.cs" />
-    <Compile Include="Interfaces\Servicos\IServiceService.cs" />
     <Compile Include="Interfaces\Servicos\IVendasService.cs" />
     <Compile Include="Interfaces\Servicos\IItemService.cs" />
     <Compile Include="Interfaces\Servicos\IClienteService.cs" />

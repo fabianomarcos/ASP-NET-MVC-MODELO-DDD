@@ -3,7 +3,7 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace ProjetoModeloDDD.Infra.Data.EntityConfig
 {
-    public class ClienteConfiguration : EntityTypeConfiguration<Services>
+    public class ClienteConfiguration : EntityTypeConfiguration<Cliente>
     {
         public ClienteConfiguration()
         {

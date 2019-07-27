@@ -35,7 +35,7 @@ namespace ProjetoModeloDDD.Infra.Data.EntityConfig
                 .WithMany()
                 .HasForeignKey(p => p.InsumoId);
 
-            HasRequired(p => p.Service)
+            HasRequired(p => p.Servico)
                 .WithMany()
                 .HasForeignKey(p => p.ServicoId);
 

@@ -15,7 +15,7 @@ namespace ProjetoModeloDDD.Domain.Entities
         public virtual Colaboradores Colaborador { get; set; }
 
         public int ClienteId { get; set; }
-        public virtual Servicos Cliente { get; set; }
+        public virtual Cliente Cliente { get; set; }
 
         public int ProdutoId { get; set; }
         public virtual ICollection<Produtos> Produto { get; set; }

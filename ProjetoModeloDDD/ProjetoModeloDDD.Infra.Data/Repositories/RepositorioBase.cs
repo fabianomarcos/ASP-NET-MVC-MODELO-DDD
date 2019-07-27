@@ -2,6 +2,7 @@
 using ProjetoModeloDDD.Infra.Data.Contexto;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 
 namespace ProjetoModeloDDD.Infra.Data.Repositories
